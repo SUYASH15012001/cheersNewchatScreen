@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {StyleSheet, Text, View} from 'react-native'
-import { Avatar, Card, IconButton, Button } from 'react-native-paper';
+import { Avatar, Card, IconButton } from 'react-native-paper';
 
 const imagesFetch = {
   '1': require('../assets/images/Layer1.png'),
@@ -10,7 +10,6 @@ const imagesFetch = {
 };
 
 const MyCard = (props) => {
-  console.log(props)
   const { title, subtitle, imgCode, time } = props;
   return (
     <Card style={styles.container}>
